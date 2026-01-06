@@ -7,6 +7,19 @@ public class StringExamples {
     public static void main(String[] args) {
 
         longestSubstring();
+
+        reverseAString();
+    }
+
+    private static void reverseAString() {
+        System.out.println("******************************** Reverse a String ********************************");
+        String str = "luhaR";
+        String rev ="";
+
+        for(int i = str.length()-1; i >=0; i--){
+            rev += str.charAt(i);
+        }
+        System.out.println(rev);
     }
 
     private static void longestSubstring() {
